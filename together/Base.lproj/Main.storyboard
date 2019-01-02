@@ -21,7 +21,6 @@
         <!--Splash View Controller-->
         <scene sceneID="avO-C3-U5R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ydS-LS-WgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="odx-yb-PJa" customClass="SplashViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ve3-pF-PyJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -81,9 +80,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="dde-DJ-ZKJ"/>
                     <connections>
+                        <outlet property="containerView" destination="avc-hl-S6h" id="Sdn-51-1fZ"/>
+                        <outlet property="imgLogo" destination="3gE-lO-84D" id="Esh-E8-c2b"/>
+                        <outlet property="lblTogether" destination="DJi-k5-MUi" id="0iZ-9U-N2c"/>
                         <segue destination="KAU-WW-LXu" kind="show" identifier="SelectGenderSegue" id="81C-Xi-CA8"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydS-LS-WgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1121.7391304347827" y="131.25"/>
         </scene>
@@ -105,7 +108,7 @@
                                         <rect key="frame" x="108.66666666666669" y="85.666666666666686" width="197" height="197"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm Looking for a Bride" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmA-Ll-40p">
-                                        <rect key="frame" x="120.33333333333333" y="290.66666666666669" width="173.33333333333337" height="20"/>
+                                        <rect key="frame" x="115.66666666666669" y="290.66666666666669" width="183" height="24"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -135,7 +138,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm Looking for a Groom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1a-PD-tvc">
-                                        <rect key="frame" x="114.33333333333333" y="290.66666666666663" width="185.33333333333337" height="20"/>
+                                        <rect key="frame" x="107.33333333333333" y="290.66666666666663" width="199.33333333333337" height="24"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -242,13 +245,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="374"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dileka.A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t71-9t-qjc">
-                                        <rect key="frame" x="8" y="382" width="232" height="29.333333333333314"/>
+                                        <rect key="frame" x="8" y="382" width="232" height="35"/>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="25"/>
                                         <color key="textColor" red="0.98039215686274506" green="0.27450980392156865" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kandy, Sri Lanka" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV8-oh-709">
-                                        <rect key="frame" x="8" y="411.33333333333331" width="232" height="14"/>
+                                        <rect key="frame" x="8" y="417" width="232" height="17"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                         <color key="textColor" red="0.98039215690000003" green="0.27450980390000002" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -261,7 +264,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm open minded,163 cm, 54 kg, slim body, brown hair," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg8-SU-eB4">
-                                        <rect key="frame" x="8" y="433.33333333333337" width="232" height="28.666666666666686"/>
+                                        <rect key="frame" x="8" y="442" width="232" height="28.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.70980392156862748" green="0.71764705882352942" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -304,6 +307,34 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Gc-s6-ay3" customClass="CardView" customModule="together" customModuleProvider="target">
+                                <rect key="frame" x="47.333333333333343" y="656" width="319.33333333333326" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Py-Ir-VKE">
+                                        <rect key="frame" x="111.66666666666666" y="18" width="96.333333333333343" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4039215686" green="0.20000000000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="4Py-Ir-VKE" firstAttribute="centerX" secondItem="2Gc-s6-ay3" secondAttribute="centerX" id="9ve-6B-d0g"/>
+                                    <constraint firstAttribute="height" constant="60" id="NNN-Sl-NBk"/>
+                                    <constraint firstItem="4Py-Ir-VKE" firstAttribute="centerY" secondItem="2Gc-s6-ay3" secondAttribute="centerY" id="hhP-kI-MXI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.30036861799999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -312,13 +343,16 @@
                             <constraint firstItem="xo7-1Q-8jS" firstAttribute="leading" secondItem="tOE-bC-IoJ" secondAttribute="leading" id="Gp4-VC-jp3"/>
                             <constraint firstItem="VCq-2x-78p" firstAttribute="centerX" secondItem="Npl-qg-FM6" secondAttribute="centerX" id="RxQ-am-4ZW"/>
                             <constraint firstItem="6jN-2U-1QU" firstAttribute="top" secondItem="827-Gw-AvZ" secondAttribute="bottom" constant="-15" id="TqI-UB-xS3"/>
+                            <constraint firstItem="2Gc-s6-ay3" firstAttribute="width" secondItem="6jN-2U-1QU" secondAttribute="width" id="a65-kn-GNB"/>
                             <constraint firstItem="827-Gw-AvZ" firstAttribute="top" secondItem="VCq-2x-78p" secondAttribute="bottom" constant="-15" id="aQm-XV-OkM"/>
+                            <constraint firstItem="tOE-bC-IoJ" firstAttribute="bottom" secondItem="2Gc-s6-ay3" secondAttribute="bottom" constant="20" id="hKb-Zf-1Oa"/>
                             <constraint firstItem="tOE-bC-IoJ" firstAttribute="trailing" secondItem="xo7-1Q-8jS" secondAttribute="trailing" id="kq0-Qd-FGz"/>
                             <constraint firstItem="VCq-2x-78p" firstAttribute="top" secondItem="tOE-bC-IoJ" secondAttribute="top" constant="20" id="mdC-xB-5rk"/>
                             <constraint firstItem="xo7-1Q-8jS" firstAttribute="top" secondItem="Npl-qg-FM6" secondAttribute="top" id="mo8-gV-FVk"/>
                             <constraint firstItem="827-Gw-AvZ" firstAttribute="centerX" secondItem="Npl-qg-FM6" secondAttribute="centerX" id="tEZ-Pi-m89"/>
                             <constraint firstItem="827-Gw-AvZ" firstAttribute="width" secondItem="VCq-2x-78p" secondAttribute="width" multiplier="0.95" id="tVt-Sd-cWf"/>
                             <constraint firstItem="6jN-2U-1QU" firstAttribute="width" secondItem="827-Gw-AvZ" secondAttribute="width" multiplier="0.95" id="u40-FJ-mSb"/>
+                            <constraint firstItem="2Gc-s6-ay3" firstAttribute="centerX" secondItem="Npl-qg-FM6" secondAttribute="centerX" id="veY-Td-lzG"/>
                             <constraint firstItem="6jN-2U-1QU" firstAttribute="centerX" secondItem="Npl-qg-FM6" secondAttribute="centerX" id="xTP-yy-Tkb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tOE-bC-IoJ"/>
@@ -361,7 +395,6 @@
         <!--Navigation Controller-->
         <scene sceneID="e9P-L5-Gyk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tTd-JZ-yl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GZB-gu-GvA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cwi-OZ-hfO">
@@ -373,6 +406,7 @@
                         <segue destination="odx-yb-PJa" kind="relationship" relationship="rootViewController" id="iNC-VW-ASt"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTd-JZ-yl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="214.49275362318843" y="131.25"/>
         </scene>
